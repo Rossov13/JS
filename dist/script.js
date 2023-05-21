@@ -27,12 +27,25 @@
 // alert((number - number%10)/10%10)
 // const number = +(prompt('write the number') as string);
 // alert(number/10 + 250) 
-var hours = +prompt('Введите часы');
-var minutes = +prompt('Введите минуты');
-var timeInMinutes = hours * 60 + minutes;
-var timeInMinutesToNextDay = 24 * 60 - timeInMinutes;
-var minutesToNextDay = timeInMinutesToNextDay % 60;
-var hoursToNextDay = (timeInMinutesToNextDay - minutesToNextDay) / 60;
-alert("\u0414\u043E \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E \u0434\u043D\u044F " + hoursToNextDay + " \u0447\u0430\u0441\u043E\u0432 \u0438 " + minutesToNextDay + " \u043C\u0438\u043D\u0443\u0442");
+// const hours = +(prompt('Введите часы') as string)
+// const minutes = +(prompt('Введите минуты') as string)
+// const timeInMinutes = hours*60 + minutes
+// const timeInMinutesToNextDay = 24 * 60 - timeInMinutes
+// const minutesToNextDay = timeInMinutesToNextDay%60
+// const hoursToNextDay = (timeInMinutesToNextDay - minutesToNextDay)/60
+// alert(`До следующего дня ${hoursToNextDay} часов и ${minutesToNextDay} минут`)
 // const input = prompt('ведите число')
 // const shift = +(prompt('write the number') as string);
+// function min(a, b) {
+//     return a < b ? a : b
+//   }
+// let a = +prompt('1')
+// let b = +prompt('2')
+// alert(min(a,b))
+var t = +prompt('write the first number ');
+var l = +prompt('write the second number');
+var i = 0;
+while (i > t && i < l) {
+    alert(i);
+    i++;
+}

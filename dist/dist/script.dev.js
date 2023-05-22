@@ -1,5 +1,3 @@
-"use strict";
-
 // const x = +(prompt('введите число') as string)
 // alert(Math.pow(x, 2))
 // const a = +(prompt('введите число') as string);
@@ -44,11 +42,47 @@
 // let a = +prompt('1')
 // let b = +prompt('2')
 // alert(min(a,b))
-var t = +prompt('write the first number ');
-var l = +prompt('write the second number');
-var i = 0;
-
-while (i > t && i < l) {
-  alert(i);
-  i++;
-}
+// Modul 1 3 Week homework
+// var a = +(prompt('write the first number ') as string);
+// var n = +(prompt('write the second number') as string);
+// var sum = 0;
+// while(a<=n){
+//     sum+=a;  
+//     a++;  
+//  }
+// alert(sum)
+// var theFirstNumber  = +(prompt('write the first number') as string);
+// var theSecondNumber = +(prompt('write the second number') as string);
+// while  (theFirstNumber != theSecondNumber) {
+//     if (theFirstNumber > theSecondNumber)  {
+//     theFirstNumber = theFirstNumber - theSecondNumber;
+//     }
+//     else {
+//     theSecondNumber = theSecondNumber - theFirstNumber;
+//     }
+//   }
+// alert(' ' + theSecondNumber + ' ')
+// let number_to_divide = +(prompt ("write the number")as string)
+// for (let  i = 1 ; i <= number_to_divide ; i ++) {
+//   if (number_to_divide % i == 0) {
+//     document.write (' '+i+ ' ') 
+//   }
+//   else {
+//     continue;
+//   }
+// }
+// const days = ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// let currDay = 0;
+// while (confirm(`${days[currDay]}. do you want to see the next day?`)) {
+//   currDay = (currDay + 1) % days.length;
+// }
+// let a = 0
+// let multiplier  = 2
+// let multiplier1 = 1
+// for (multiplier = 2; multiplier <=9; multiplier++ ) {
+//     for (multiplier1 = 1; multiplier1<=10; multiplier1 ++) {
+//     a = multiplier*multiplier1
+//     alert (' ' + a + ' ')
+//     }
+//     }
+"use strict";

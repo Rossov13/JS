@@ -42,6 +42,7 @@
 // let a = +prompt('1')
 // let b = +prompt('2')
 // alert(min(a,b))
+// Modul 1 3 Week homework
 // var a = +(prompt('write the first number ') as string);
 // var n = +(prompt('write the second number') as string);
 // var sum = 0;
@@ -61,17 +62,34 @@
 //     }
 //   }
 // alert(' ' + theSecondNumber + ' ')
-var divNumb = +prompt('write the number');
-for (i = 1; i < -divNumb; i++) {
-    if (divNumb % 1 == 0) {
-        alert('' + i + '');
-    }
-    else {
-        continue;
-    }
-}
-// const days ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-// currentdays = 0
-// while (confirm(`${days[currDay]}. Хотите увидеть следующий день?`)) {
-//     currDay = (currDay + 1) % days.length;
+// let number_to_divide = +(prompt ("write the number")as string)
+// for (let  i = 1 ; i <= number_to_divide ; i ++) {
+//   if (number_to_divide % i == 0) {
+//     document.write (' '+i+ ' ') 
 //   }
+//   else {
+//     continue;
+//   }
+// }
+// const days = ['Monday', 'Tuesday', 'wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// let currDay = 0;
+// while (confirm(`${days[currDay]}. do you want to see the next day?`)) {
+//   currDay = (currDay + 1) % days.length;
+// }
+// let a = 0
+// let multiplier  = 2
+// let multiplier1 = 1
+// for (multiplier = 2; multiplier <=9; multiplier++ ) {
+//     for (multiplier1 = 1; multiplier1<=10; multiplier1 ++) {
+//     a = multiplier*multiplier1
+//     alert (' ' + a + ' ')
+//     }
+//     }
+// let numb1 = +(prompt ("write the number")as string) 
+// let numbDig = 0
+// {if (numb1 == 0) alert (1)};
+// while (numb1 > 1) {
+//   numb1 /= 10
+//   numbDig ++
+// }
+// alert (numbDig)   

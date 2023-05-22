@@ -42,10 +42,36 @@
 // let a = +prompt('1')
 // let b = +prompt('2')
 // alert(min(a,b))
-var t = +prompt('write the first number ');
-var l = +prompt('write the second number');
-var i = 0;
-while (i > t && i < l) {
-    alert(i);
-    i++;
+// var a = +(prompt('write the first number ') as string);
+// var n = +(prompt('write the second number') as string);
+// var sum = 0;
+// while(a<=n){
+//     sum+=a;  
+//     a++;  
+//  }
+// alert(sum)
+// var theFirstNumber  = +(prompt('write the first number') as string);
+// var theSecondNumber = +(prompt('write the second number') as string);
+// while  (theFirstNumber != theSecondNumber) {
+//     if (theFirstNumber > theSecondNumber)  {
+//     theFirstNumber = theFirstNumber - theSecondNumber;
+//     }
+//     else {
+//     theSecondNumber = theSecondNumber - theFirstNumber;
+//     }
+//   }
+// alert(' ' + theSecondNumber + ' ')
+var divNumb = +prompt('write the number');
+for (i = 1; i < -divNumb; i++) {
+    if (divNumb % 1 == 0) {
+        alert('' + i + '');
+    }
+    else {
+        continue;
+    }
 }
+// const days ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+// currentdays = 0
+// while (confirm(`${days[currDay]}. Хотите увидеть следующий день?`)) {
+//     currDay = (currDay + 1) % days.length;
+//   }

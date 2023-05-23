@@ -93,3 +93,30 @@
 //   numbDig ++
 // }
 // alert (numbDig)   
+var numberA = 0;
+var numberB = 0;
+var result = true;
+var action_sign = "";
+do {
+    numberA = +prompt("Write the first number: ");
+    numberB = +prompt("Write the second numbeк: ");
+    action_sign = prompt("Write the sign (*, /, + либо -): ");
+    switch (action_sign) {
+        case "+":
+            alert(numberA + " " + action_sign + " " + numberB + " = " + (numberA + numberB));
+            break;
+        case "-":
+            alert(numberA + " " + action_sign + " " + numberB + " = " + (numberA - numberB));
+            break;
+        case "*":
+            alert(numberA + " " + action_sign + " " + numberB + " = " + numberA * numberB);
+            break;
+        case "/":
+            alert(numberA + " " + action_sign + " " + numberB + " = " + numberA / numberB);
+            break;
+        default:
+            alert("\u0412\u044B \u043D\u0435 \u0432\u0432\u0435\u043B\u0438 \u0437\u043D\u0430\u043A \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043E\u043F\u0435\u0440\u0430\u0446\u0438\u0438!");
+            break;
+    }
+    result = confirm("Хотите выполнить еще одну математическую операцию?");
+} while (result == true);

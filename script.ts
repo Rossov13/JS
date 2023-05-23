@@ -126,3 +126,38 @@
 // }
 // alert (numbDig)   
 
+let numberA = 0;
+let numberB = 0;
+let result = true;
+let action_sign = "";
+do {
+  numberA = +prompt("Write the first number: ");
+  numberB = +prompt("Write the second numbeк: ");
+  action_sign = prompt("Write the sign (*, /, + либо -): ");
+  switch (action_sign) {
+    case "+":
+      alert(
+        `${numberA} ${action_sign} ${numberB} = ${numberA + numberB}`
+      );
+      break;
+    case "-":
+      alert(
+        `${numberA} ${action_sign} ${numberB} = ${numberA - numberB}`
+      );
+      break;
+    case "*":
+      alert(
+        `${numberA} ${action_sign} ${numberB} = ${numberA * numberB}`
+      );
+      break;
+    case "/":
+      alert(
+        `${numberA} ${action_sign} ${numberB} = ${numberA / numberB}`
+      );
+      break;
+    default:
+      alert(`Вы не ввели знак математической операции!`);
+      break;
+  }
+  result = confirm("Хотите выполнить еще одну математическую операцию?");
+} while (result == true);

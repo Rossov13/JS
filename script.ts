@@ -308,3 +308,154 @@
 //   `Из 10 введеных вами чисел ${positive_number} положительных, ${negative_number} отрицательных, ${null_number} равных нулю, ${even_number} четных и ${odd_number} нечетных.`
 // );
 // }
+
+
+// Homework 3
+// let a = +(prompt('write how many times the # should be displayed')as string);
+// let b = 1;
+// while (b <= a) {
+//     b += 1;
+//     alert('#');
+// }
+// task 2. Пользователь ввел число, а на экран вывелись все числа
+// от введенного до 0
+// let a = +(prompt('write the number')as string);
+// while (a >= 0) {
+    
+//     document.write('' + a + '');
+//     alert(a);
+//     a--;
+// }
+// task 3.Запросить число и степень. Возвести число в указанную
+// степень и вывести результат.
+// let a = +(prompt('write the number')as string);
+// let b = +(prompt('write the degree')as string);
+// alert(a**b)
+// task 4. Запросить 2 числа и найти все общие делители.?????
+// let a = +(prompt('write the first number')as string);
+// let b = +(prompt('write the second number')as string);
+// task 5. Посчитать факториал введенного пользователем числа.
+// let n = +(prompt('write the number')as string);
+// function factorial(n) {
+//     return (n != 1) ? n * factorial(n - 1) : 1;
+//   }
+//   alert( factorial(n) );
+// task 6. Предлагать пользователю решить пример 2 + 2 * 2 до тех
+// пор, пока он не решит его правильно.
+// do {
+//   let a = +(prompt('write the answer of the 2*2')as string);
+// } while (a != 4);
+// alert(a)
+// task 7. Делить число 1000 на 2 до тех пор, пока не получится число
+// меньше 50. Вывести это число и сколько делений произвели.
+// let a = 1000;
+// let n=0;
+//     while(a >= 50){
+//         a = a/2;
+//         n++;
+//     }
+// alert(n)
+// let a = 1000, 
+// let n = 0;
+// let b = 0;
+// while(a >= 50){
+//     a = a/2;
+//   n++;
+// }
+// alert("Итераций: " + n +", получилось число " + b);
+
+// Modul 1 week 4 Homework
+// Task 1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое
+// больше, чем второе; и 0 – если числа равны.
+
+// function compareTwoNumbers ( a, b ) {
+//     if (a > b) {
+//     return 1;
+//     } 
+//     else if ( a < b) {
+//     return -1;
+//     } 
+//     else if ( a == b) {
+//     return 0;
+//     } 
+//     else 
+//     return 'you have made a mistake during the writing of the Number';
+// }
+// let theFirstNumber =  +(prompt('write the first number')as string);
+// let theSecondNumber = +(prompt('write the second number')as string);
+// alert (compareTwoNumbers( theFirstNumber, theSecondNumber ));
+
+// Task 2. Написать функцию, которая вычисляет факториал переданного ей числа.
+// let n =  +(prompt('write the number')as string);
+// function factorial(n) {
+//     return (n != 1) ? n * factorial(n - 1) : 1;
+//   }
+//   alert( factorial(n) );
+
+// Task 3. Написать функцию, которая принимает три отдельные 
+// цифры и превращает их в одно число. Например: цифры 
+// 1, 4, 9 превратятся в число 149.
+
+// let mark1 =  +(prompt('write the number'));
+// let mark2 =  +(prompt('write the second'));
+// let mark3 =  +(prompt('write the third'));
+// function sumOfTheNumbers(a, b, c) {
+//     if (a != 0) {
+//         var num1 = String(a);
+//         var num2 = String(b);
+//         var num3 = String(c);
+//         return num1 + num2 + num3;
+//     }
+//     else if (b != 0) {
+//         var num1 = String(a);
+//         var num2 = String(b);
+//         var num3 = String(c);
+//         return num2 + num3 + num1;
+//     }
+//     else if (c != 0) {
+//         var num1 = String(a);
+//         var num2 = String(b);
+//         var num3 = String(c);
+//         return num3 + num1 + num2;
+//     }
+//     else {
+//         return a;
+//     }
+// }
+// alert (sumOfTheNumbers(mark1,mark2,mark3))
+// 4. Написать функцию, которая принимает длину и ширину
+// прямоугольника и вычисляет его площадь. Если в функцию
+// передали 1 параметр, то она вычисляет площадь квадрата.
+    // let a = +(prompt('write the side1'));
+    // let b = +(prompt('write the side2'));
+    // function areaOfTheRectangular (a,b) {
+    //     if (a == 0) {
+    //         return 'Площадь квадрата: ' + b * b;
+    //     }
+    //     else if (b == 0) {
+    //         return 'Площадь квадрата: ' + a * a;
+    //     }
+    //     else {
+    //         return 'Площадь прямоугольника: ' + a * b;
+    //     }
+    // }
+    // alert (areaOfTheRectangular(a,b))
+    // 5. Написать функцию, которая проверяет, является ли переданное ей число совершенным. Совершенное число – это
+    // число, равное сумме всех своих собственных делителей.
+    // let perfectNumber = +prompt("write the number for defining of the perfectness of the number");
+    // function perfect_number(n) {
+    //     var n1 = 0;
+    //     for (var i = 1; i < n; i++) {
+    //         if (n % i == 0) {
+    //             n1 = n1 + i;
+    //         }
+    //     }
+    //     if (n1 == n) {
+    //         return 'ваше число совершенно';
+    //     }
+    //     else {
+    //         return 'ваше число не является совершенным';
+    //     }
+    // }
+
+    // alert(perfect_number(perfectNumber));
